@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOOD AIR MAKERS PRO | 機種別分解・洗浄の現場動画DB</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { font-family: "Noto Sans JP", sans-serif; }
+    .hero-bg {
+      background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 40%, #0ea5e9 100%);
+    }
+    .sticky-cta {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 12px 16px;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid #e0f2fe;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+    }
+    @media (min-width: 768px) { .sticky-cta { display: none; } }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s ease; }
+    .faq-answer.open { max-height: 500px; }
+    .tab-btn.active { background: #0ea5e9; color: white; }
+    .tab-btn { transition: all 0.2s; }
+    .maker-tab { display: none; }
+    .maker-tab.active { display: grid; }
+    .lock-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 20%, rgba(15,23,42,0.85) 100%);
+      border-radius: 12px;
+      display: flex; align-items: flex-end; justify-content: center;
+      padding-bottom: 12px;
+    }
+    .gradient-badge {
+      background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+    }
+  </style>
+</head>
+<body class="bg-white pb-16 md:pb-0">
+
+<!-- スマホ追従CTA -->
+<div class="sticky-cta">
+  <a href="#cta" class="block w-full bg-gradient-to-r from-sky-500 to-sky-400 text-white text-center font-black text-sm py-3.5 rounded-xl shadow-lg active:scale-95 transition-transform">
+    7日間無料で使ってみる →
+  </a>
+</div>
+
+<!-- Header -->
+<header class="bg-white/90 backdrop-blur-sm border-b border-sky-100 py-4 px-6 sticky top-0 z-40">
+  <div class="max-w-5xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="w-8 h-8 bg-gradient-to-br from-sky-400 to-sky-600 rounded-xl flex items-center justify-center">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+        </svg>
+      </div>
+      <div>
+        <p class="text-xs text-sky-500 font-bold tracking-widest leading-none">GOOD AIR MAKERS</p>
+        <p class="text-xs text-slate-400 leading-none mt-0.5">PRO</p>
+      </div>
+    </a>
+    <a href="#cta" class="hidden md:inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition-colors shadow">
+      7日間無料で試す
+    </a>
+  </div>
+</header>
+
+<!-- 1. FV -->
+<section class="hero-bg relative py-20 md:py-28 px-4 overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-sky-300 rounded-full blur-2xl"></div>
+  </div>
+  <div class="max-w-4xl mx-auto relative z-10">
+    <div class="flex flex-wrap gap-3 mb-6" data-aos="fade-down">
+      <span class="inline-flex items-center gap-1.5 bg-white/20 text-white text-xs font-bold px-4 py-1.5 rounded-full border border-white/30">
+        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+        現在20機種収録・随時追加中
+      </span>
+      <span class="inline-flex items-center gap-1.5 bg-amber-400 text-white text-xs font-bold px-4 py-1.5 rounded-full">
+        ★5.0 × 307件
+      </span>
+    </div>
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-5 leading-tight" data-aos="fade-up" data-aos-delay="100">
+      知らない機種が来ても、<br>もう迷わない。
+    </h1>
+    <p class="text-sky-100 text-base md:text-xl mb-8 leading-relaxed max-w-2xl" data-aos="fade-up" data-aos-delay="150">
+      機種別・完全分解＆洗浄の現場動画DB、随時追加中。<br>
+      現役プロが毎日の現場で撮影した実践映像を、メーカー別・機種別に整理。
+    </p>
+    <div data-aos="fade-up" data-aos-delay="200">
+      <a href="#cta" class="inline-flex items-center gap-3 bg-white text-sky-600 font-black text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all">
+        7日間無料で使ってみる
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+        </svg>
+      </a>
+      <p class="text-sky-200 text-xs mt-3">クレジットカード登録後7日間は完全無料。縛りなし。</p>
+    </div>
+  </div>
+  <!-- 動画プレビュー画像 -->
+  <div class="max-w-4xl mx-auto mt-12 relative z-10 px-4" data-aos="fade-up" data-aos-delay="250">
+    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
+      <img src="https://picsum.photos/seed/aircon-pro/900/400" alt="動画DBイメージ" class="w-full object-cover h-44 md:h-64">
+      <div class="absolute inset-0 bg-gradient-to-r from-sky-900/60 to-transparent flex items-center px-8">
+        <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-xl cursor-pointer hover:scale-110 transition-transform">
+          <svg class="w-7 h-7 text-sky-600 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="ml-6 text-white">
+          <p class="font-bold text-sm">DAIKIN AN71XRP 完全分解動画</p>
+          <p class="text-xs text-sky-200 mt-1">15:42 ／ 石川代表による現場実演</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. こんな人向け -->
+<section class="py-16 px-4 bg-white">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <span class="inline-block bg-sky-100 text-sky-600 text-xs font-bold px-4 py-1.5 rounded-full mb-4">こんな人向け</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-800">あなたに当てはまりませんか？</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="flex items-start gap-3 bg-sky-50 rounded-2xl p-5 border border-sky-100" data-aos="fade-right" data-aos-delay="50">
+        <div class="w-7 h-7 bg-sky-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <p class="text-slate-700 text-sm font-medium leading-relaxed">新しい機種のエアコンが来て困ったことがある</p>
+      </div>
+      <div class="flex items-start gap-3 bg-sky-50 rounded-2xl p-5 border border-sky-100" data-aos="fade-left" data-aos-delay="100">
+        <div class="w-7 h-7 bg-sky-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <p class="text-slate-700 text-sm font-medium leading-relaxed">完全分解に踏み出せていない</p>
+      </div>
+      <div class="flex items-start gap-3 bg-sky-50 rounded-2xl p-5 border border-sky-100" data-aos="fade-right" data-aos-delay="150">
+        <div class="w-7 h-7 bg-sky-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <p class="text-slate-700 text-sm font-medium leading-relaxed">YouTubeの情報が断片的で信用できない</p>
+      </div>
+      <div class="flex items-start gap-3 bg-sky-50 rounded-2xl p-5 border border-sky-100" data-aos="fade-left" data-aos-delay="200">
+        <div class="w-7 h-7 bg-sky-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <p class="text-slate-700 text-sm font-medium leading-relaxed">他社との差別化・高単価化をしたい</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. DB紹介 -->
+<section class="py-16 px-4 bg-slate-50">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <span class="inline-block bg-sky-100 text-sky-600 text-xs font-bold px-4 py-1.5 rounded-full mb-4">動画DB中身チラ見せ</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-800 mb-3">メーカー × 機種ごとに<br class="sm:hidden">分解・洗浄動画がセット</h2>
+      <p class="text-slate-500 text-sm max-w-xl mx-auto">会員登録すると、全機種のロックが解除されます。随時新機種を追加中。</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="flex flex-wrap gap-2 mb-6 justify-center" data-aos="fade-up" data-aos-delay="50">
+      <button onclick="switchMaker('daikin')" class="tab-btn active text-xs font-bold px-4 py-2 rounded-xl border border-sky-200 bg-sky-500 text-white" id="tab-daikin">ダイキン</button>
+      <button onclick="switchMaker('fujitsu')" class="tab-btn text-xs font-bold px-4 py-2 rounded-xl border border-sky-200 text-slate-600 hover:bg-sky-50" id="tab-fujitsu">富士通</button>
+      <button onclick="switchMaker('hitachi')" class="tab-btn text-xs font-bold px-4 py-2 rounded-xl border border-sky-200 text-slate-600 hover:bg-sky-50" id="tab-hitachi">日立</button>
+      <button onclick="switchMaker('mitsubishi_e')" class="tab-btn text-xs font-bold px-4 py-2 rounded-xl border border-sky-200 text-slate-600 hover:bg-sky-50" id="tab-mitsubishi_e">三菱電機</button>
+      <button onclick="switchMaker('mitsubishi_h')" class="tab-btn text-xs font-bold px-4 py-2 rounded-xl border border-sky-200 text-slate-600 hover:bg-sky-50" id="tab-mitsubishi_h">三菱重工</button>
+      <button onclick="switchMaker('panasonic')" class="tab-btn text-xs font-bold px-4 py-2 rounded-xl border border-sky-200 text-slate-600 hover:bg-sky-50" id="tab-panasonic">パナソニック</button>
+      <button onclick="switchMaker('sharp')" class="tab-btn text-xs font-bold px-4 py-2 rounded-xl border border-sky-200 text-slate-600 hover:bg-sky-50" id="tab-sharp">シャープ</button>
+      <button onclick="switchMaker('toshiba')" class="tab-btn text-xs font-bold px-4 py-2 rounded-xl border border-sky-200 text-slate-600 hover:bg-sky-50" id="tab-toshiba">東芝</button>
+      <button onclick="switchMaker('hisense')" class="tab-btn text-xs font-bold px-4 py-2 rounded-xl border border-sky-200 text-slate-600 hover:bg-sky-50" id="tab-hisense">ハイセンス</button>
+      <button onclick="switchMaker('washing')" class="tab-btn text-xs font-bold px-4 py-2 rounded-xl border border-sky-200 text-slate-600 hover:bg-sky-50" id="tab-washing">洗濯機</button>
+    </div>
+
+    <!-- ダイキン -->
+    <div id="maker-daikin" class="maker-tab active grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video" data-aos="zoom-in" data-aos-delay="50">
+        <img src="https://picsum.photos/seed/daikin1/300/170" class="w-full h-full object-cover">
+        <div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">AN71XRP</p></div></div>
+      </div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://picsum.photos/seed/daikin2/300/170" class="w-full h-full object-cover">
+        <div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">S71ZTAXP</p></div></div>
+      </div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video" data-aos="zoom-in" data-aos-delay="150">
+        <img src="https://picsum.photos/seed/daikin3/300/170" class="w-full h-full object-cover">
+        <div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">F40ZTEP</p></div></div>
+      </div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://picsum.photos/seed/daikin4/300/170" class="w-full h-full object-cover">
+        <div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">CXシリーズ</p></div></div>
+      </div>
+    </div>
+
+    <!-- 富士通 -->
+    <div id="maker-fujitsu" class="maker-tab grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video">
+        <img src="https://picsum.photos/seed/fujitsu1/300/170" class="w-full h-full object-cover">
+        <div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">AS-V71N2W</p></div></div>
+      </div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video">
+        <img src="https://picsum.photos/seed/fujitsu2/300/170" class="w-full h-full object-cover">
+        <div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">AS-X56L2W</p></div></div>
+      </div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video">
+        <img src="https://picsum.photos/seed/fujitsu3/300/170" class="w-full h-full object-cover">
+        <div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">AS-Z63K2W</p></div></div>
+      </div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video">
+        <img src="https://picsum.photos/seed/fujitsu4/300/170" class="w-full h-full object-cover">
+        <div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">Zシリーズ</p></div></div>
+      </div>
+    </div>
+
+    <!-- 日立 -->
+    <div id="maker-hitachi" class="maker-tab grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/hitachi1/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">RAS-X71N2</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/hitachi2/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">RAS-G56M2</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/hitachi3/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">白くまくん</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/hitachi4/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">Xシリーズ 旧型</p></div></div></div>
+    </div>
+
+    <!-- その他のメーカーはデフォルトで同じ構造 -->
+    <div id="maker-mitsubishi_e" class="maker-tab grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/mit1/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">MSZ-X7122S</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/mit2/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">MSZ-FL6322S</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/mit3/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">霧ヶ峰 Zシリーズ</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/mit4/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">MSZ-GV2822</p></div></div></div>
+    </div>
+    <div id="maker-mitsubishi_h" class="maker-tab grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/mh1/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">SRK-ZS6322D</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/mh2/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">SRK-XT56H2</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/mh3/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">ビーバーエアコン</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/mh4/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">追加中</p></div></div></div>
+    </div>
+    <div id="maker-panasonic" class="maker-tab grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/pan1/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">CS-X712D2</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/pan2/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">CS-UX712D2</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/pan3/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">エオリア Xシリーズ</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/pan4/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">CS-LX712D2</p></div></div></div>
+    </div>
+    <div id="maker-sharp" class="maker-tab grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/shr1/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">AY-N71DH</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/shr2/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">AY-L56H</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/shr3/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">プラズマクラスター</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/shr4/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">追加中</p></div></div></div>
+    </div>
+    <div id="maker-toshiba" class="maker-tab grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/tosh1/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">RAS-X712N</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/tosh2/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">大清快シリーズ</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/tosh3/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">随時追加中</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video flex items-center justify-center bg-sky-50 border-2 border-dashed border-sky-200">
+        <div class="text-center"><svg class="w-6 h-6 text-sky-300 mx-auto mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg><p class="text-sky-400 text-xs font-bold">追加予定</p></div>
+      </div>
+    </div>
+    <div id="maker-hisense" class="maker-tab grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/hise1/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">HA-S7122W</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/hise2/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">随時追加中</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video flex items-center justify-center bg-sky-50 border-2 border-dashed border-sky-200"><div class="text-center"><svg class="w-6 h-6 text-sky-300 mx-auto mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg><p class="text-sky-400 text-xs font-bold">追加予定</p></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video flex items-center justify-center bg-sky-50 border-2 border-dashed border-sky-200"><div class="text-center"><svg class="w-6 h-6 text-sky-300 mx-auto mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg><p class="text-sky-400 text-xs font-bold">追加予定</p></div></div>
+    </div>
+    <div id="maker-washing" class="maker-tab grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/wash1/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">縦型 洗濯槽分解</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video"><img src="https://picsum.photos/seed/wash2/300/170" class="w-full h-full object-cover"><div class="lock-overlay"><div class="text-center"><svg class="w-5 h-5 text-white mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg><p class="text-white text-xs font-bold">ドラム式 清掃</p></div></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video flex items-center justify-center bg-sky-50 border-2 border-dashed border-sky-200"><div class="text-center"><svg class="w-6 h-6 text-sky-300 mx-auto mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg><p class="text-sky-400 text-xs font-bold">追加予定</p></div></div>
+      <div class="relative rounded-xl overflow-hidden bg-slate-200 aspect-video flex items-center justify-center bg-sky-50 border-2 border-dashed border-sky-200"><div class="text-center"><svg class="w-6 h-6 text-sky-300 mx-auto mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg><p class="text-sky-400 text-xs font-bold">追加予定</p></div></div>
+    </div>
+
+    <div class="mt-6 text-center" data-aos="fade-up">
+      <p class="text-slate-500 text-sm">
+        <span class="inline-flex items-center gap-1.5 bg-green-50 text-green-600 font-bold text-xs px-3 py-1.5 rounded-full border border-green-200">
+          <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
+          随時追加中 ─ 会員からのリクエストにも対応
+        </span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. なぜ信頼できるか -->
+<section class="py-16 px-4 bg-white">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <span class="inline-block bg-sky-100 text-sky-600 text-xs font-bold px-4 py-1.5 rounded-full mb-4">なぜ信頼できるか</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-800">現役プロが、現場で毎日撮り続けている</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div class="text-center p-6 rounded-2xl bg-sky-50 border border-sky-100" data-aos="fade-up" data-aos-delay="50">
+        <div class="text-4xl font-black text-sky-600 mb-2">★5.0</div>
+        <p class="font-bold text-slate-800 mb-1">Googleクチコミ</p>
+        <p class="text-slate-500 text-sm">307件の実績</p>
+      </div>
+      <div class="text-center p-6 rounded-2xl bg-sky-50 border border-sky-100" data-aos="fade-up" data-aos-delay="100">
+        <div class="text-4xl font-black text-sky-600 mb-2">No.1</div>
+        <p class="font-bold text-slate-800 mb-1">群馬県内</p>
+        <p class="text-slate-500 text-sm">エアコン清掃部門</p>
+      </div>
+      <div class="text-center p-6 rounded-2xl bg-sky-50 border border-sky-100" data-aos="fade-up" data-aos-delay="150">
+        <div class="text-4xl font-black text-sky-600 mb-2">毎日</div>
+        <p class="font-bold text-slate-800 mb-1">2〜3件の現場</p>
+        <p class="text-slate-500 text-sm">で撮影・更新中</p>
+      </div>
+    </div>
+    <div class="bg-gradient-to-r from-sky-50 to-sky-100 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 border border-sky-200" data-aos="fade-up">
+      <div class="w-20 h-20 bg-gradient-to-br from-sky-400 to-sky-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+      </div>
+      <div>
+        <div class="inline-block bg-sky-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-2">代表</div>
+        <h3 class="text-xl font-black text-slate-800 mb-2">石川 ○○（代表）</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          工作機械の営業マンからエアコン清掃業へ転身。地道な技術と接客で群馬県内No.1に。
+          現在も毎日2〜3件の現場に出て、実際の作業を動画に記録・整理し続けています。
+          「現場で迷う人をゼロにしたい」という思いからこのDBを立ち上げました。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. 料金 -->
+<section class="py-16 px-4 bg-slate-50" id="pricing">
+  <div class="max-w-2xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <span class="inline-block bg-sky-100 text-sky-600 text-xs font-bold px-4 py-1.5 rounded-full mb-4">料金プラン</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-800">シンプルな月額プラン</h2>
+    </div>
+    <div class="bg-white rounded-3xl p-8 border-2 border-sky-300 shadow-xl relative" data-aos="zoom-in">
+      <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+        <span class="bg-gradient-to-r from-sky-500 to-sky-400 text-white text-xs font-black px-6 py-2 rounded-full shadow-lg">7日間無料体験あり</span>
+      </div>
+      <div class="text-center mb-8 mt-2">
+        <p class="text-slate-500 text-sm mb-1">月額（税込）</p>
+        <div class="flex items-end justify-center gap-1">
+          <span class="text-slate-400 text-xl font-bold">¥</span>
+          <span class="text-5xl font-black text-sky-600">4,980</span>
+          <span class="text-slate-400 text-base mb-2">/月</span>
+        </div>
+        <p class="text-sky-500 text-sm font-bold mt-1">初月無料 → 翌月から月額課金</p>
+      </div>
+      <ul class="space-y-3 mb-8">
+        <li class="flex items-center gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm">全機種の分解・洗浄動画（20機種以上）が見放題</span></li>
+        <li class="flex items-center gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm">新機種追加のたびに自動でアクセス可能</span></li>
+        <li class="flex items-center gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm">スマホ・PC・タブレットどこでも視聴OK</span></li>
+        <li class="flex items-center gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm">いつでも即日解約可能・縛り一切なし</span></li>
+        <li class="flex items-center gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm">クレジットカード払い対応</span></li>
+      </ul>
+      <div class="bg-sky-50 rounded-xl p-4 text-center">
+        <p class="text-sky-600 text-sm font-bold">コーヒー1杯分以下で<br>プロ技術者としての差別化を。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. FAQ -->
+<section class="py-16 px-4 bg-white">
+  <div class="max-w-2xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <span class="inline-block bg-sky-100 text-sky-600 text-xs font-bold px-4 py-1.5 rounded-full mb-4">よくある質問</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-800">FAQ</h2>
+    </div>
+    <div class="space-y-3" data-aos="fade-up">
+      <div class="border border-slate-200 rounded-2xl overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-sky-50 transition-colors">
+          <span class="font-bold text-slate-800 text-sm pr-4">今の技術レベルでも使えますか？</span>
+          <svg class="w-5 h-5 text-sky-500 flex-shrink-0 faq-icon transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-600 text-sm leading-relaxed pb-5">はい、問題ありません。「エアコン清掃の基本は分かるが、特定の機種で詰まる」という方に特に向いています。初歩的な内容より、実際の現場作業を具体的に示しているため、ある程度の経験がある方がより活用いただけます。</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-sky-50 transition-colors">
+          <span class="font-bold text-slate-800 text-sm pr-4">どれくらいの頻度で動画が追加されますか？</span>
+          <svg class="w-5 h-5 text-sky-500 flex-shrink-0 faq-icon transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-600 text-sm leading-relaxed pb-5">月に複数本を目安に追加しています。石川代表が毎日現場に出ており、新機種に当たるたびに撮影しています。また、会員からのリクエストにも対応しています。</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-sky-50 transition-colors">
+          <span class="font-bold text-slate-800 text-sm pr-4">解約はすぐにできますか？</span>
+          <svg class="w-5 h-5 text-sky-500 flex-shrink-0 faq-icon transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-600 text-sm leading-relaxed pb-5">はい、マイページからいつでも即日解約が可能です。解約後は翌月以降の請求が発生しません。違約金や解約手数料は一切かかりません。</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-sky-50 transition-colors">
+          <span class="font-bold text-slate-800 text-sm pr-4">動画はダウンロードできますか？</span>
+          <svg class="w-5 h-5 text-sky-500 flex-shrink-0 faq-icon transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-600 text-sm leading-relaxed pb-5">動画のダウンロードはできません（著作権保護のため）。ただし、ストリーミング再生はWi-Fi環境さえあればスムーズにご覧いただけます。現場ではWi-Fi環境を確保してご利用ください。</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-sky-50 transition-colors">
+          <span class="font-bold text-slate-800 text-sm pr-4">スマホで見られますか？</span>
+          <svg class="w-5 h-5 text-sky-500 flex-shrink-0 faq-icon transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-600 text-sm leading-relaxed pb-5">はい、スマートフォン・タブレット・PCいずれでも視聴可能です。現場でもスマホを見ながら作業していただけるよう、モバイルでの視認性を優先して設計されています。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. 最終CTA -->
+<section class="py-20 px-4 bg-gradient-to-br from-sky-600 to-sky-800" id="cta">
+  <div class="max-w-2xl mx-auto text-center">
+    <div data-aos="fade-up">
+      <p class="text-sky-200 text-sm font-bold mb-3 tracking-widest">LIMITED OFFER</p>
+      <h2 class="text-2xl md:text-4xl font-black text-white mb-4">
+        まず7日間、無料で体験を。
+      </h2>
+      <p class="text-sky-100 text-sm md:text-base mb-8 leading-relaxed">
+        カード登録後7日間は完全無料。<br>使ってみて合わなければ無料期間中に解約するだけ。
+      </p>
+      <a href="#" class="inline-flex items-center gap-3 bg-white text-sky-700 font-black text-lg px-8 py-5 rounded-2xl shadow-2xl hover:-translate-y-1 transition-transform">
+        7日間無料で始める
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </a>
+      <div class="flex flex-wrap items-center justify-center gap-4 mt-6">
+        <span class="flex items-center gap-1.5 text-sky-200 text-xs"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>縛りなし・即解約OK</span>
+        <span class="flex items-center gap-1.5 text-sky-200 text-xs"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>クレジットカード対応</span>
+        <span class="flex items-center gap-1.5 text-sky-200 text-xs"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>SSL暗号化通信</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-12 px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="flex items-center gap-2 mb-6">
+      <div class="w-8 h-8 bg-gradient-to-br from-sky-400 to-sky-600 rounded-lg flex items-center justify-center">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+      </div>
+      <p class="font-bold">GOOD AIR MAKERS PRO</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-slate-400 mb-8">
+      <a href="index.html" class="hover:text-sky-400 transition-colors">トップページ</a>
+      <a href="beginner.html" class="hover:text-sky-400 transition-colors">開業向けページ</a>
+      <a href="#" class="hover:text-sky-400 transition-colors">特定商取引法に基づく表記</a>
+      <a href="#" class="hover:text-sky-400 transition-colors">プライバシーポリシー</a>
+      <a href="#" class="hover:text-sky-400 transition-colors">利用規約</a>
+    </div>
+    <div class="border-t border-slate-700 pt-6">
+      <p class="text-slate-500 text-xs">© 2024 GOOD AIR MAKERS. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 700, easing: "ease-out-cubic", once: true, offset: 40 });
+
+  function switchMaker(maker) {
+    document.querySelectorAll(".maker-tab").forEach(t => t.classList.remove("active"));
+    document.querySelectorAll(".tab-btn").forEach(b => {
+      b.classList.remove("active", "bg-sky-500", "text-white");
+      b.classList.add("text-slate-600");
+    });
+    document.getElementById("maker-" + maker).classList.add("active");
+    const btn = document.getElementById("tab-" + maker);
+    btn.classList.add("active", "bg-sky-500", "text-white");
+    btn.classList.remove("text-slate-600");
+  }
+
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector(".faq-icon");
+    const isOpen = answer.classList.contains("open");
+    document.querySelectorAll(".faq-answer").forEach(a => a.classList.remove("open"));
+    document.querySelectorAll(".faq-icon").forEach(i => i.style.transform = "");
+    if (!isOpen) {
+      answer.classList.add("open");
+      icon.style.transform = "rotate(180deg)";
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOOD AIR MAKERS | エアコン清掃で独立する</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { font-family: "Noto Sans JP", sans-serif; }
+    .hero-bg {
+      background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 50%, #0ea5e9 100%);
+    }
+    .sticky-cta {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 12px 16px;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid #e0f2fe;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+    }
+    @media (min-width: 768px) { .sticky-cta { display: none; } }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-answer.open { max-height: 500px; }
+    .phase-line { position: absolute; left: 27px; top: 56px; bottom: 0; width: 2px; background: linear-gradient(to bottom, #38bdf8, #e0f2fe); }
+  </style>
+</head>
+<body class="bg-white pb-20 md:pb-0">
+
+<!-- スマホ追従CTA -->
+<div class="sticky-cta">
+  <div class="grid grid-cols-2 gap-2">
+    <a href="#cta" class="block w-full bg-sky-100 text-sky-700 text-center font-black text-xs py-3 rounded-xl border-2 border-sky-300 active:scale-95 transition-transform">
+      スタンダードを見る
+    </a>
+    <a href="#cta" class="block w-full bg-gradient-to-r from-sky-500 to-sky-400 text-white text-center font-black text-xs py-3 rounded-xl shadow-lg active:scale-95 transition-transform">
+      プレミアムを見る →
+    </a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="bg-white/90 backdrop-blur-sm border-b border-sky-100 py-4 px-6 sticky top-0 z-40">
+  <div class="max-w-5xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="w-8 h-8 bg-gradient-to-br from-sky-400 to-sky-600 rounded-xl flex items-center justify-center">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+        </svg>
+      </div>
+      <div>
+        <p class="text-xs text-sky-500 font-bold tracking-widest leading-none">GOOD AIR MAKERS</p>
+        <p class="text-xs text-slate-400 leading-none mt-0.5">開業サポート</p>
+      </div>
+    </a>
+    <a href="#cta" class="hidden md:inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition-colors shadow">
+      まず内容を見る
+    </a>
+  </div>
+</header>
+
+<!-- 1. FV -->
+<section class="hero-bg relative py-20 md:py-28 px-4 overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-0 right-1/4 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-1/4 w-64 h-64 bg-sky-300 rounded-full blur-2xl"></div>
+  </div>
+  <div class="max-w-4xl mx-auto relative z-10">
+    <div data-aos="fade-down" class="mb-6">
+      <span class="inline-flex items-center gap-1.5 bg-amber-400 text-white text-xs font-black px-4 py-1.5 rounded-full shadow">
+        ★5.0 × 307件 ／ 卒業生5名が既に活動中
+      </span>
+    </div>
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-5 leading-tight" data-aos="fade-up" data-aos-delay="100">
+      エアコン清掃で、<br>独立する。
+    </h1>
+    <p class="text-sky-100 text-base md:text-xl mb-8 leading-relaxed max-w-2xl" data-aos="fade-up" data-aos-delay="150">
+      技術・集客・開業まで。群馬No.1プロが全部教える。<br>
+      「何から始めればいいか」が全部わかるカリキュラム。
+    </p>
+    <div data-aos="fade-up" data-aos-delay="200">
+      <a href="#cta" class="inline-flex items-center gap-3 bg-white text-sky-600 font-black text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all">
+        まず無料で内容を見る
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+        </svg>
+      </a>
+      <p class="text-sky-200 text-xs mt-3">内容を確認してから申し込めます。</p>
+    </div>
+  </div>
+  <div class="max-w-4xl mx-auto mt-12 relative z-10 px-4" data-aos="fade-up" data-aos-delay="250">
+    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
+      <img src="https://picsum.photos/seed/beginner-hero/900/350" alt="開業イメージ" class="w-full object-cover h-40 md:h-56">
+      <div class="absolute inset-0 bg-gradient-to-r from-sky-900/70 to-transparent flex items-center px-8">
+        <div class="text-white">
+          <p class="font-black text-lg md:text-2xl">ゼロから始める、<br>エアコン清掃独立の道</p>
+          <p class="text-sky-200 text-sm mt-2">技術習得 → 集客 → 独立 → 安定収入</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. こんな人向け -->
+<section class="py-16 px-4 bg-white">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <span class="inline-block bg-sky-100 text-sky-600 text-xs font-bold px-4 py-1.5 rounded-full mb-4">こんな人向け</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-800">当てはまるものはありませんか？</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="flex items-start gap-3 bg-sky-50 rounded-2xl p-5 border border-sky-100" data-aos="fade-right" data-aos-delay="50">
+        <div class="w-7 h-7 bg-sky-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <p class="text-slate-700 text-sm font-medium leading-relaxed">副業・転職・脱サラを本気で考えている</p>
+      </div>
+      <div class="flex items-start gap-3 bg-sky-50 rounded-2xl p-5 border border-sky-100" data-aos="fade-left" data-aos-delay="100">
+        <div class="w-7 h-7 bg-sky-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <p class="text-slate-700 text-sm font-medium leading-relaxed">手に職をつけたい・技術で食べていきたい</p>
+      </div>
+      <div class="flex items-start gap-3 bg-sky-50 rounded-2xl p-5 border border-sky-100" data-aos="fade-right" data-aos-delay="150">
+        <div class="w-7 h-7 bg-sky-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <p class="text-slate-700 text-sm font-medium leading-relaxed">一人でも安定して稼げる仕事を作りたい</p>
+      </div>
+      <div class="flex items-start gap-3 bg-sky-50 rounded-2xl p-5 border border-sky-100" data-aos="fade-left" data-aos-delay="200">
+        <div class="w-7 h-7 bg-sky-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <p class="text-slate-700 text-sm font-medium leading-relaxed">どこから始めればいいか全然わからない</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ロードマップ -->
+<section class="py-16 px-4 bg-slate-50">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <span class="inline-block bg-sky-100 text-sky-600 text-xs font-bold px-4 py-1.5 rounded-full mb-4">学習ロードマップ</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-800">4つのフェーズで、独立まで一直線</h2>
+    </div>
+    <div class="space-y-0">
+      <!-- Phase 1 -->
+      <div class="flex gap-5 relative" data-aos="fade-up" data-aos-delay="50">
+        <div class="relative flex-shrink-0">
+          <div class="w-14 h-14 bg-gradient-to-br from-sky-400 to-sky-600 rounded-2xl flex items-center justify-center shadow-lg z-10 relative">
+            <span class="text-white font-black text-lg">1</span>
+          </div>
+          <div class="absolute left-7 top-14 bottom-0 w-0.5 bg-gradient-to-b from-sky-300 to-sky-100" style="height:calc(100% + 24px)"></div>
+        </div>
+        <div class="pb-10 flex-1">
+          <div class="inline-block bg-sky-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-2">Phase 1</div>
+          <h3 class="text-lg font-black text-slate-800 mb-2">準備</h3>
+          <div class="bg-white rounded-2xl p-5 border border-sky-100 shadow-sm">
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>必要な道具・機材の選び方と購入先</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>開業届・freee活用など事務処理の基本</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>料金設定・相場の考え方</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>保険・損害賠償への備え方</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Phase 2 -->
+      <div class="flex gap-5 relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="relative flex-shrink-0">
+          <div class="w-14 h-14 bg-gradient-to-br from-sky-400 to-sky-600 rounded-2xl flex items-center justify-center shadow-lg z-10 relative">
+            <span class="text-white font-black text-lg">2</span>
+          </div>
+          <div class="absolute left-7 top-14 w-0.5 bg-gradient-to-b from-sky-300 to-sky-100" style="height:calc(100% + 24px)"></div>
+        </div>
+        <div class="pb-10 flex-1">
+          <div class="inline-block bg-sky-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-2">Phase 2</div>
+          <h3 class="text-lg font-black text-slate-800 mb-2">技術</h3>
+          <div class="bg-white rounded-2xl p-5 border border-sky-100 shadow-sm">
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>エアコン基本構造と安全な電源確認手順</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>機種別・完全分解の動画DB（20機種以上）</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>洗浄液の選択・使い方・廃液処理</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>よくあるトラブルと対処法</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Phase 3 -->
+      <div class="flex gap-5 relative" data-aos="fade-up" data-aos-delay="150">
+        <div class="relative flex-shrink-0">
+          <div class="w-14 h-14 bg-gradient-to-br from-sky-400 to-sky-600 rounded-2xl flex items-center justify-center shadow-lg z-10 relative">
+            <span class="text-white font-black text-lg">3</span>
+          </div>
+          <div class="absolute left-7 top-14 w-0.5 bg-gradient-to-b from-sky-300 to-sky-100" style="height:calc(100% + 24px)"></div>
+        </div>
+        <div class="pb-10 flex-1">
+          <div class="inline-block bg-sky-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-2">Phase 3</div>
+          <h3 class="text-lg font-black text-slate-800 mb-2">集客</h3>
+          <div class="bg-white rounded-2xl p-5 border border-sky-100 shadow-sm">
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>Googleビジネスプロフィール（MEO）の育て方</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>Instagram・Xを使った集客の実践法</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>クチコミを自然に増やす接客・フォロー術</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>リピーター・紹介客を生む仕組みづくり</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Phase 4 -->
+      <div class="flex gap-5 relative" data-aos="fade-up" data-aos-delay="200">
+        <div class="relative flex-shrink-0">
+          <div class="w-14 h-14 bg-gradient-to-br from-sky-400 to-sky-600 rounded-2xl flex items-center justify-center shadow-lg z-10 relative">
+            <span class="text-white font-black text-lg">4</span>
+          </div>
+        </div>
+        <div class="pb-4 flex-1">
+          <div class="inline-block bg-sky-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-2">Phase 4</div>
+          <h3 class="text-lg font-black text-slate-800 mb-2">安定化</h3>
+          <div class="bg-white rounded-2xl p-5 border border-sky-100 shadow-sm">
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>繁忙期・閑散期の波を乗りこなす方法</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>月20件から月30件へのステップアップ</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>高単価メニュー（完全分解）の導入タイミング</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>月30万円から月50万円への道筋</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. 料金比較表 -->
+<section class="py-16 px-4 bg-white" id="pricing">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <span class="inline-block bg-sky-100 text-sky-600 text-xs font-bold px-4 py-1.5 rounded-full mb-4">料金プラン</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-800 mb-3">2つのプランから選べます</h2>
+      <p class="text-slate-500 text-sm">どちらも返金保証あり。まずは内容をご確認ください。</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- スタンダード -->
+      <div class="rounded-3xl border-2 border-sky-200 p-8 bg-white" data-aos="fade-right">
+        <div class="inline-block bg-sky-100 text-sky-600 text-xs font-bold px-3 py-1 rounded-full mb-4">スタンダード</div>
+        <div class="mb-6">
+          <div class="flex items-end gap-1">
+            <span class="text-slate-400 text-lg font-bold">¥</span>
+            <span class="text-4xl font-black text-slate-800">98,000</span>
+            <span class="text-slate-400 text-sm mb-1">（税込）</span>
+          </div>
+          <p class="text-slate-500 text-xs mt-1">一括払い・分割払い相談可</p>
+        </div>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm">動画DB（随時追加）</span></li>
+          <li class="flex items-start gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm">全カリキュラム動画（4フェーズ）</span></li>
+          <li class="flex items-start gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm">コミュニティ参加（卒業生と交流）</span></li>
+          <li class="flex items-start gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm">チャットサポート（60日間）</span></li>
+          <li class="flex items-start gap-3"><div class="w-5 h-5 bg-slate-200 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></div><span class="text-slate-400 text-sm line-through">石川さんとのZoom面談</span></li>
+          <li class="flex items-start gap-3"><div class="w-5 h-5 bg-slate-200 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></div><span class="text-slate-400 text-sm line-through">開業後の伴走サポート</span></li>
+        </ul>
+        <a href="#cta" class="block w-full text-center bg-sky-100 hover:bg-sky-200 text-sky-700 font-black py-4 rounded-xl transition-colors">
+          スタンダードで始める
+        </a>
+      </div>
+
+      <!-- プレミアム -->
+      <div class="rounded-3xl border-2 border-sky-500 p-8 bg-gradient-to-b from-sky-50 to-white relative shadow-xl" data-aos="fade-left">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+          <span class="bg-gradient-to-r from-sky-500 to-sky-400 text-white text-xs font-black px-6 py-2 rounded-full shadow">おすすめ</span>
+        </div>
+        <div class="inline-block bg-sky-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">プレミアム</div>
+        <div class="mb-6">
+          <div class="flex items-end gap-1">
+            <span class="text-slate-400 text-lg font-bold">¥</span>
+            <span class="text-4xl font-black text-sky-600">198,000</span>
+            <span class="text-slate-400 text-sm mb-1">（税込）</span>
+          </div>
+          <p class="text-slate-500 text-xs mt-1">一括払い・分割払い相談可</p>
+        </div>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm">動画DB（随時追加）</span></li>
+          <li class="flex items-start gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm">全カリキュラム動画（4フェーズ）</span></li>
+          <li class="flex items-start gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm">コミュニティ参加（卒業生と交流）</span></li>
+          <li class="flex items-start gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm font-bold">チャットサポート（90日間）</span></li>
+          <li class="flex items-start gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm font-bold">石川さんとのZoom面談（月2回 × 3ヶ月）</span></li>
+          <li class="flex items-start gap-3"><div class="w-5 h-5 bg-sky-500 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-slate-700 text-sm font-bold">開業後の最初の1件まで完全伴走</span></li>
+        </ul>
+        <a href="#cta" class="block w-full text-center bg-gradient-to-r from-sky-500 to-sky-400 hover:from-sky-600 hover:to-sky-500 text-white font-black py-4 rounded-xl transition-all shadow-lg">
+          プレミアムで始める →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. 石川代表について -->
+<section class="py-16 px-4 bg-sky-50">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <span class="inline-block bg-sky-100 text-sky-600 text-xs font-bold px-4 py-1.5 rounded-full mb-4">代表プロフィール</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-800">教えるのは、現役プロだけ</h2>
+    </div>
+    <div class="bg-white rounded-3xl p-8 border border-sky-100 shadow-sm" data-aos="fade-up">
+      <div class="flex flex-col sm:flex-row items-start gap-6">
+        <div class="w-20 h-20 bg-gradient-to-br from-sky-400 to-sky-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+          <svg class="w-11 h-11 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="bg-sky-500 text-white text-xs font-bold px-3 py-1 rounded-full">代表</span>
+            <span class="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full">★5.0 × 307件</span>
+            <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full">群馬県内 No.1</span>
+          </div>
+          <h3 class="text-xl font-black text-slate-800 mb-3">石川 ○○</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            前職は工作機械の営業マン。「一人でも稼げる技術職を」と考えてエアコン清掃業に転身。
+            試行錯誤しながら地道にクチコミを積み上げ、Googleレビュー★5.0（307件）・群馬県内No.1を達成。
+          </p>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            現在も毎日2〜3件の現場に出続けながら、動画撮影・教材制作を行っています。
+            「教科書より現場」という信念のもと、すべてのコンテンツを現役プロとして監修しています。
+          </p>
+          <div class="bg-sky-50 rounded-xl p-4 border border-sky-100">
+            <p class="text-sky-700 text-sm font-bold">"ゼロから始めた自分だからこそ、ゼロの人に必要なことが全部わかる"</p>
+            <p class="text-sky-500 text-xs mt-1">— 石川 代表</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-4 mt-6 pt-6 border-t border-sky-100">
+        <div class="text-center">
+          <p class="text-2xl font-black text-sky-600">★5.0</p>
+          <p class="text-xs text-slate-500">Googleクチコミ</p>
+        </div>
+        <div class="text-center">
+          <p class="text-2xl font-black text-sky-600">307</p>
+          <p class="text-xs text-slate-500">クチコミ件数</p>
+        </div>
+        <div class="text-center">
+          <p class="text-2xl font-black text-sky-600">5名</p>
+          <p class="text-xs text-slate-500">既に活動中の卒業生</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. 卒業生の声 -->
+<section class="py-16 px-4 bg-white">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <span class="inline-block bg-sky-100 text-sky-600 text-xs font-bold px-4 py-1.5 rounded-full mb-4">卒業生の声</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-800">実際に始めた方の声</h2>
+      <p class="text-slate-500 text-sm mt-2">※ 個人の体験談です。成果には個人差があります。</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="bg-sky-50 rounded-2xl p-6 border border-sky-100" data-aos="fade-up" data-aos-delay="50">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-sky-300 rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <div>
+            <p class="font-bold text-slate-800 text-sm">A.T. さん（30代・男性）</p>
+            <p class="text-sky-500 text-xs">副業スタート → 月15万円</p>
+          </div>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">「週末だけの副業から始めて、3ヶ月で月15万円になりました。最初はどこから手をつければいいかわからなかったのですが、ロードマップ通り進めるだけで道が開けました。」</p>
+      </div>
+      <div class="bg-sky-50 rounded-2xl p-6 border border-sky-100" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-sky-300 rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <div>
+            <p class="font-bold text-slate-800 text-sm">K.M. さん（40代・男性）</p>
+            <p class="text-sky-500 text-xs">脱サラ → 半年で月30万円</p>
+          </div>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">「会社を辞めての独立はリスクが怖かったですが、石川さんのZoom面談で都度相談できたので安心できました。半年後には月30万円の売上が作れています。」</p>
+      </div>
+      <div class="bg-sky-50 rounded-2xl p-6 border border-sky-100" data-aos="fade-up" data-aos-delay="150">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-sky-300 rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 418 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <div>
+            <p class="font-bold text-slate-800 text-sm">S.Y. さん（20代・男性）</p>
+            <p class="text-sky-500 text-xs">未経験 → 独立 → 月20万円</p>
+          </div>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">「エアコン清掃の経験はゼロでした。動画を見ながら練習して、Googleマップに登録したら意外と早く問い合わせが来てびっくり。今は安定して月20万円以上稼げています。」</p>
+      </div>
+      <div class="bg-sky-50 rounded-2xl p-6 border border-sky-100" data-aos="fade-up" data-aos-delay="50">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-sky-300 rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <div>
+            <p class="font-bold text-slate-800 text-sm">H.N. さん（50代・男性）</p>
+            <p class="text-sky-500 text-xs">定年前の転職準備として</p>
+          </div>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">「定年後を見据えて50代で始めました。年齢的に不安でしたが、体一つ・道具一式で仕事ができることがわかり自信がつきました。週3日で月10万円以上になっています。」</p>
+      </div>
+      <div class="bg-sky-50 rounded-2xl p-6 border border-sky-100" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-sky-300 rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <div>
+            <p class="font-bold text-slate-800 text-sm">T.O. さん（30代・女性）</p>
+            <p class="text-sky-500 text-xs">育休中に副業スタート</p>
+          </div>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">「育休中に副業を始めました。子どもが保育園に行っている間だけで、月8万円程度の収入が作れています。清掃は体を動かす仕事なので気分転換にもなっています。」</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. FAQ -->
+<section class="py-16 px-4 bg-slate-50">
+  <div class="max-w-2xl mx-auto">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <span class="inline-block bg-sky-100 text-sky-600 text-xs font-bold px-4 py-1.5 rounded-full mb-4">よくある質問</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-800">FAQ</h2>
+    </div>
+    <div class="space-y-3" data-aos="fade-up">
+      <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-sky-50 transition-colors">
+          <span class="font-bold text-slate-800 text-sm pr-4">エアコン清掃の経験がなくても大丈夫ですか？</span>
+          <svg class="w-5 h-5 text-sky-500 flex-shrink-0 faq-icon transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-600 text-sm leading-relaxed pb-5">はい、未経験の方を前提に設計しています。Phase1の準備編から丁寧に解説しており、「何を買えばいいか」「どう練習すればいいか」から順を追って学べます。</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-sky-50 transition-colors">
+          <span class="font-bold text-slate-800 text-sm pr-4">初期費用はどれくらいかかりますか？</span>
+          <svg class="w-5 h-5 text-sky-500 flex-shrink-0 faq-icon transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-600 text-sm leading-relaxed pb-5">道具・機材の初期費用は概ね5〜15万円程度が目安です。（ケルヒャー等の機器・養生シート・洗浄液など）カリキュラム内で優先順位と具体的な購入先を紹介しています。</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-sky-50 transition-colors">
+          <span class="font-bold text-slate-800 text-sm pr-4">副業でも活用できますか？</span>
+          <svg class="w-5 h-5 text-sky-500 flex-shrink-0 faq-icon transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-600 text-sm leading-relaxed pb-5">はい、多くの卒業生が副業からスタートしています。週末だけ・1日2〜3件からでも始められます。会社勤めしながら軌道に乗せてから独立するルートが現実的です。</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-sky-50 transition-colors">
+          <span class="font-bold text-slate-800 text-sm pr-4">スタンダードとプレミアムで迷っています</span>
+          <svg class="w-5 h-5 text-sky-500 flex-shrink-0 faq-icon transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-600 text-sm leading-relaxed pb-5">自走できる自信がある方はスタンダードで十分です。「最初の1件が取れるか不安」「石川さんに直接アドバイスをもらいたい」という方にはプレミアムをおすすめします。Zoom面談は特に価値が高いと好評です。</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-sky-50 transition-colors">
+          <span class="font-bold text-slate-800 text-sm pr-4">購入後に後悔した場合はどうなりますか？</span>
+          <svg class="w-5 h-5 text-sky-500 flex-shrink-0 faq-icon transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-600 text-sm leading-relaxed pb-5">購入から14日以内であれば、理由を問わず全額返金いたします。返金保証があるので、まずは安心して内容をご確認ください。</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-sky-50 transition-colors">
+          <span class="font-bold text-slate-800 text-sm pr-4">チャットサポートはどのように使えますか？</span>
+          <svg class="w-5 h-5 text-sky-500 flex-shrink-0 faq-icon transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-600 text-sm leading-relaxed pb-5">専用チャットグループ（LINE）で質問できます。石川代表が直接回答します。技術的な疑問・集客の相談・道具選びなど何でも聞けます。スタンダードは60日間、プレミアムは90日間対応します。</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-sky-50 transition-colors">
+          <span class="font-bold text-slate-800 text-sm pr-4">分割払いはできますか？</span>
+          <svg class="w-5 h-5 text-sky-500 flex-shrink-0 faq-icon transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-600 text-sm leading-relaxed pb-5">はい、クレジットカードの分割払いや銀行振込での分割交渉が可能です。詳細は購入ページまたはLINEにてお問い合わせください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. 返金保証 -->
+<section class="py-12 px-4 bg-white">
+  <div class="max-w-2xl mx-auto">
+    <div class="bg-gradient-to-r from-sky-50 to-sky-100 rounded-3xl p-8 border-2 border-sky-200 text-center" data-aos="zoom-in">
+      <div class="w-16 h-16 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-9 h-9 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      </div>
+      <h3 class="text-xl font-black text-slate-800 mb-2">14日間 全額返金保証</h3>
+      <p class="text-slate-600 text-sm leading-relaxed">
+        購入から14日以内であれば、<br>理由を問わず全額返金いたします。<br>
+        ご安心して内容をお試しください。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 9. 最終CTA -->
+<section class="py-20 px-4 bg-gradient-to-br from-sky-600 to-sky-800" id="cta">
+  <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+    <p class="text-sky-200 text-sm font-bold mb-3 tracking-widest">START YOUR JOURNEY</p>
+    <h2 class="text-2xl md:text-4xl font-black text-white mb-4">
+      エアコン清掃で、独立する。
+    </h2>
+    <p class="text-sky-100 text-sm md:text-base mb-10 leading-relaxed">
+      技術・集客・開業まで全部ここにある。<br>14日間の返金保証つきで安心してスタートできます。
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto">
+      <a href="#" class="block bg-white/20 hover:bg-white/30 border-2 border-white/50 text-white font-black py-5 rounded-2xl transition-all">
+        <p class="text-lg">スタンダード</p>
+        <p class="text-2xl mt-1">¥98,000</p>
+        <p class="text-sky-200 text-xs mt-2">まずは自走でスタート</p>
+      </a>
+      <a href="#" class="block bg-white text-sky-700 font-black py-5 rounded-2xl shadow-2xl hover:-translate-y-0.5 transition-all">
+        <p class="text-lg">プレミアム</p>
+        <p class="text-2xl mt-1">¥198,000</p>
+        <p class="text-sky-400 text-xs mt-2">Zoom面談＋伴走サポートつき</p>
+      </a>
+    </div>
+    <div class="flex flex-wrap items-center justify-center gap-4 mt-8">
+      <span class="flex items-center gap-1.5 text-sky-200 text-xs"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>14日間返金保証</span>
+      <span class="flex items-center gap-1.5 text-sky-200 text-xs"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>クレジットカード・分割相談可</span>
+      <span class="flex items-center gap-1.5 text-sky-200 text-xs"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>SSL暗号化通信</span>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-12 px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="flex items-center gap-2 mb-6">
+      <div class="w-8 h-8 bg-gradient-to-br from-sky-400 to-sky-600 rounded-lg flex items-center justify-center">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+      </div>
+      <p class="font-bold">GOOD AIR MAKERS</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-slate-400 mb-8">
+      <a href="index.html" class="hover:text-sky-400 transition-colors">トップページ</a>
+      <a href="pro.html" class="hover:text-sky-400 transition-colors">プロ向けページ</a>
+      <a href="#" class="hover:text-sky-400 transition-colors">特定商取引法に基づく表記</a>
+      <a href="#" class="hover:text-sky-400 transition-colors">プライバシーポリシー</a>
+      <a href="#" class="hover:text-sky-400 transition-colors">利用規約</a>
+    </div>
+    <div class="bg-slate-800 rounded-xl p-4 mb-6 text-xs text-slate-400">
+      <p class="font-bold text-slate-300 mb-2">免責事項</p>
+      <p class="leading-relaxed">本ページに記載の収入事例は個人の体験談です。成果には個人差があり、同様の成果を保証するものではありません。商品・サービスの内容は予告なく変更される場合があります。</p>
+    </div>
+    <div class="border-t border-slate-700 pt-6">
+      <p class="text-slate-500 text-xs">© 2024 GOOD AIR MAKERS. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 700, easing: "ease-out-cubic", once: true, offset: 40 });
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector(".faq-icon");
+    const isOpen = answer.classList.contains("open");
+    document.querySelectorAll(".faq-answer").forEach(a => a.classList.remove("open"));
+    document.querySelectorAll(".faq-icon").forEach(i => i.style.transform = "");
+    if (!isOpen) {
+      answer.classList.add("open");
+      icon.style.transform = "rotate(180deg)";
+    }
+  }
+</script>
+</body>
+</html>
