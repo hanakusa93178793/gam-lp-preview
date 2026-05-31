@@ -100,7 +100,8 @@
     /* Pain section */
     .pain-list { display: grid; gap: 14px; margin-top: 32px; }
     .pain-item { display: flex; align-items: flex-start; gap: 14px; background: var(--card-bg); border-radius: 16px; padding: 20px 24px; border-left: 4px solid var(--accent); }
-    .pain-icon { font-size: 22px; flex-shrink: 0; }
+    .pain-icon { width: 32px; height: 32px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+    .pain-icon svg { width: 28px; height: 28px; stroke: var(--accent); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
     .pain-text { font-size: 15px; font-weight: 500; color: var(--text); }
 
     /* How it works / LINE flow */
@@ -168,7 +169,8 @@
     .testimonial-stars { color: #FFC107; font-size: 14px; margin-bottom: 12px; letter-spacing: 2px; }
     .testimonial-text { font-size: 14px; color: var(--text); line-height: 1.8; margin-bottom: 16px; }
     .testimonial-author { display: flex; align-items: center; gap: 10px; }
-    .testimonial-avatar { width: 36px; height: 36px; background: var(--accent-tint); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+    .testimonial-avatar { width: 36px; height: 36px; background: var(--accent-tint); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .testimonial-avatar svg { width: 20px; height: 20px; stroke: var(--accent); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
     .testimonial-name { font-size: 13px; font-weight: 700; color: var(--text); }
     .testimonial-meta { font-size: 11px; color: var(--text-sub); }
 
@@ -326,29 +328,6 @@
 </section>
 
 <!-- ========== BRANCH ========== -->
-<section id="branch" class="section--white">
-  <div class="container">
-    <p class="label-en" data-aos="fade-up">Choose your path</p>
-    <h2 class="section-title" data-aos="fade-up"><strong>あなたに合ったコースを選んでください</strong></h2>
-    <p class="section-desc" style="margin-bottom:40px;" data-aos="fade-up">目的・経験によって最適なプランが異なります。</p>
-    <div class="branch-cards">
-      <div class="card branch-card" id="branch-pro" onclick="selectTrack('pro')" data-aos="fade-right">
-        <div class="branch-num">PLAN 01 — For Pro</div>
-        <div class="branch-title">すでに清掃業をやっている・<br>技術を深めたい</div>
-        <div class="branch-body">機種別の完全分解動画DBを活用して「初めての機種でも困らない」技術力を手に入れる。LINEのAIボットが24時間サポート。</div>
-        <div class="branch-price">¥3,980 / 月（税込）〜</div>
-        <div class="branch-arrow">プロ向けプランを見る <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M13 7l5 5-5 5M6 12h12"/></svg></div>
-      </div>
-      <div class="card branch-card" id="branch-beginner" onclick="selectTrack('beginner')" data-aos="fade-left">
-        <div class="branch-num">PLAN 02 — For Beginner</div>
-        <div class="branch-title">エアコン清掃業を<br>ゼロから始めたい</div>
-        <div class="branch-body">技術・集客・開業準備まで体系化されたカリキュラムと、AIが常駐するLINE学習環境で独立を実現する。</div>
-        <div class="branch-price">¥4,980 / 月（税込）〜</div>
-        <div class="branch-arrow">開業向けプランを見る <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M13 7l5 5-5 5M6 12h12"/></svg></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <!-- ======================================= -->
@@ -362,27 +341,14 @@
       <p class="label-en" data-aos="fade-up">Pain Points</p>
       <h2 class="section-title" data-aos="fade-up"><strong>こんな悩み、ありませんか？</strong></h2>
       <div class="pain-list" data-aos="fade-up" data-aos-delay="80">
-        <div class="pain-item"><div class="pain-icon">😓</div><div class="pain-text">初めて見る機種が来た時、分解の手順がわからなくて時間がかかってしまう</div></div>
-        <div class="pain-item"><div class="pain-icon">📚</div><div class="pain-text">メーカーごとに構造が違いすぎて、独学では限界を感じている</div></div>
-        <div class="pain-item"><div class="pain-icon">📱</div><div class="pain-text">現場でスマホ検索しても、実際の完全分解手順が出てこない</div></div>
-        <div class="pain-item"><div class="pain-icon">💸</div><div class="pain-text">高額な講習に行く時間・お金がない。でも技術は上げたい</div></div>
+        <div class="pain-item"><div class="pain-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><div class="pain-text">初めて見る機種が来た時、分解の手順がわからなくて時間がかかってしまう</div></div>
+        <div class="pain-item"><div class="pain-icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="pain-text">メーカーごとに構造が違いすぎて、独学では限界を感じている</div></div>
+        <div class="pain-item"><div class="pain-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div><div class="pain-text">現場でスマホ検索しても、実際の完全分解手順が出てこない</div></div>
+        <div class="pain-item"><div class="pain-icon"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div class="pain-text">高額な講習に行く時間・お金がない。でも技術は上げたい</div></div>
       </div>
     </div>
   </section>
 
-  <!-- Not for you (Pro) -->
-  <section class="section section--white">
-    <div class="container">
-      <p class="label-en" data-aos="fade-up">Not For You If...</p>
-      <h2 class="section-title" data-aos="fade-up"><strong>こんな方には向いていません</strong></h2>
-      <p class="section-desc" style="margin-bottom:0" data-aos="fade-up">合わない方には最初からお断りしています。ご確認ください。</p>
-      <div class="notforyou-list" data-aos="fade-up" data-aos-delay="80">
-        <div class="notforyou-item">動画を見るだけで実際の施工に活かさない方（現場で使ってこそ価値が出ます）</div>
-        <div class="notforyou-item">「この動画があれば未経験でも独立できる」と考えている方（現役業者向けのDBです）</div>
-        <div class="notforyou-item">1アカウントを複数人で共有するつもりの方（1アカウント1名での利用です）</div>
-      </div>
-    </div>
-  </section>
 
   <!-- LINE AI flow -->
   <section class="section section--white" style="background:var(--gray-bg);">
@@ -403,7 +369,7 @@
           <div class="flow-content">
             <div class="flow-title">AIが機種を特定・動画URLを生成</div>
             <div class="flow-desc">AIがDBから最適な分解動画を検索し、あなた専用の時間制限付きURLを即時発行します。</div>
-            <span class="flow-tag">1時間限定URL・ダウンロd��亿亿</span>
+            <span class="flow-tag">1時間限定URL・ダウンロード不可</span>
           </div>
         </div>
         <div class="flow-step">
@@ -428,7 +394,7 @@
       <div class="line-demo-wrap" data-aos="fade-up">
         <div class="line-demo-phone">
           <div class="line-phone-bar">
-            <div class="line-phone-avatar">r">🤖</div>
+            <div class="line-phone-avatar">🤖</div>
             <div class="line-phone-name">GAM AIボット<span>GOOD AIR MAKERS</span></div>
           </div>
           <div class="line-chat-body">
@@ -556,31 +522,22 @@
         <div class="testimonial">
           <div class="testimonial-stars">★★★★★</div>
           <div class="testimonial-text">「初めて見る機種でも、LINEで聞けば動画が来るので全然焦らなくなりました。現場での安心感が全然違います。」</div>
-          <div class="testimonial-author"><div class="testimonial-avatar">🔧</div><div><div class="testimonial-name">T.M さん</div><div class="testimonial-meta">清掃業・経験3年 / 埼玉県</div></div></div>
+          <div class="testimonial-author"><div class="testimonial-avatar"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><div class="testimonial-name">T.M さん</div><div class="testimonial-meta">清掃業・経験3年 / 埼玉県</div></div></div>
         </div>
         <div class="testimonial">
           <div class="testimonial-stars">★★★★★</div>
           <div class="testimonial-text">「機種ごとに構造が違うのはわかっていたけど、実際の映像で見るのとは全然違う。独学の限界を超えられました。」</div>
-          <div class="testimonial-author"><div class="testimonial-avatar">🛠</div><div><div class="testimonial-name">K.S さん</div><div class="testimonial-meta">独立業者・経験5年 / 栃木県</div></div></div>
+          <div class="testimonial-author"><div class="testimonial-avatar"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><div class="testimonial-name">K.S さん</div><div class="testimonial-meta">独立業者・経験5年 / 栃木県</div></div></div>
         </div>
         <div class="testimonial">
           <div class="testimonial-stars">★★★★★</div>
           <div class="testimonial-text">「月4,000円以下でこれだけの情報が使えるのはコスパ最強。高額セミナーに行く必要がなくなりました。」</div>
-          <div class="testimonial-author"><div class="testimonial-avatar">⚡</div><div><div class="testimonial-name">Y.O さん</div><div class="testimonial-meta">副業スタート / 東京都</div></div></div>
+          <div class="testimonial-author"><div class="testimonial-avatar"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><div class="testimonial-name">Y.O さん</div><div class="testimonial-meta">副業スタート / 東京都</div></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Plan switcher for Pro track -->
-  <section class="section section--white" style="padding:32px 0;">
-    <div class="container">
-      <div class="plan-switcher">
-        <div class="plan-switcher-text"><strong>ゼロから開業を目指している方へ</strong><br>未経験開業向けの別プランもあります。</div>
-        <button class="btn btn-outline" onclick="selectTrack('beginner'); document.getElementById('track-beginner').scrollIntoView({behavior:'smooth'})">開業向けプランを見る →</button>
-      </div>
-    </div>
-  </section>
 
 </div><!-- /track-pro -->
 
@@ -596,28 +553,14 @@
       <p class="label-en" data-aos="fade-up">Pain Points</p>
       <h2 class="section-title" data-aos="fade-up"><strong>こんな不安、持っていませんか？</strong></h2>
       <div class="pain-list" data-aos="fade-up" data-aos-delay="80">
-        <div class="pain-item"><div class="pain-icon">🤔</div><div class="pain-text">エアコン清掃に興味はあるが、技術的なことが何もわからず何から始めればいいか不明</div></div>
-        <div class="pain-item"><div class="pain-icon">💰</div><div class="pain-text">まとまった資金がない。なるべく低コストで開業できるか不安</div></div>
-        <div class="pain-item"><div class="pain-icon">📣</div><div class="pain-text">技術を習得しても、仕事の取り方・集客の方法がわからない</div></div>
-        <div class="pain-item"><div class="pain-icon">⏰</div><div class="pain-text">会社に属さず自分のペースで働きたいが、ひとりでは心細い</div></div>
+        <div class="pain-item"><div class="pain-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div><div class="pain-text">エアコン清掃に興味はあるが、技術的なことが何もわからず何から始めればいいか不昏</div></div>
+        <div class="pain-item"><div class="pain-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div class="pain-text">まとまった資金がない。なるべく低コストで開業できるか不安</div></div>
+        <div class="pain-item"><div class="pain-icon"><svg viewBox="0 0 24 24"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div><div class="pain-text">技術を習得しても、仕事の取り方・集客の方法がわからない</div></div>
+        <div class="pain-item"><div class="pain-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="pain-text">会社に属さず自分のペースで働きたいが、ひとりでは心細い</div></div>
       </div>
     </div>
   </section>
 
-  <!-- Not for you -->
-  <section class="section section--white">
-    <div class="container">
-      <p class="label-en" data-aos="fade-up">Not For You If...</p>
-      <h2 class="section-title" data-aos="fade-up"><strong>こんな方には向いていません</strong></h2>
-      <p class="section-desc" style="margin-bottom:0" data-aos="fade-up">合わない方には最初からお断りしています。ご確認ください。</p>
-      <div class="notforyou-list" data-aos="fade-up" data-aos-delay="80">
-        <div class="notforyou-item">動画を見るだけで何もしない方（行動が一番大切です）</div>
-        <div class="notforyou-item">「確実に稼げる保証が欲しい」という方（ビジネスに保証はありません）</div>
-        <div class="notforyou-item">体力仕事が一切できない方（現場は身体を使います）</div>
-        <div class="notforyou-item">すでにエアコン清掃業として活動中の方（プロ向けプランをご利用ください）</div>
-      </div>
-    </div>
-  </section>
 
   <!-- Roadmap -->
   <section class="section section--tint">
@@ -642,15 +585,15 @@
         <div class="roadmap-step">
           <div class="roadmap-num">3</div>
           <div class="roadmap-phase">Phase 03</div>
-          <div class="roadmap-title">集客・料金設定<br>・開業準備</div>
-          <div class="roadmap-desc">MEO・SNS集客・見積もりの作り方・道具・開業届まで、実際に使えるテンプレートで学ぶ。</div>
+          <div class="roadmap-title">独立・開業の<br>実践準備</div>
+          <div class="roadmap-desc">工具選び・開業届・料金設定など、実際に動き出すために必要な知識を動画でィガ。</div>
           <span class="roadmap-period">3〜5ヶ月目</span>
         </div>
         <div class="roadmap-step">
           <div class="roadmap-num">4</div>
           <div class="roadmap-phase">Phase 04</div>
-          <div class="roadmap-title">現場同行・<br>独立サポート</div>
-          <div class="roadmap-desc">L2以上で実際の現場に同行可能。独立後もLINEサポートが継続。</div>
+          <div class="roadmap-title">個別LINE相談<br>で加速（L2）</div>
+          <div class="roadmap-desc">月2回、石川へLINEで直接質問できる。現場で詰まった疑問をピンポイントで解決。</div>
           <span class="roadmap-period">5ヶ月目〜</span>
         </div>
       </div>
@@ -678,9 +621,9 @@
             <ul class="price-features">
               <li class="price-feature">開業向け全カリキュラム動画 閲覧</li>
               <li class="price-feature">LINE AIボット 学習サポート（24h）</li>
-              <li class="price-feature">開業テンプレート（見積書・集客文例）</li>
-              <li class="price-feature no">現場同行サポート</li>
-              <li class="price-feature no">個別面談・直接指導</li>
+              <li class="price-feature">機種リクエスト 月1回</li>
+              <li class="price-feature no">個別LINE相談（石川への直接質問）</li>
+              <li class="price-feature no">機種リクエスト 月3回</li>
             </ul>
             <a href="https://lin.ee/goodairmakers" target="_blank" class="btn btn-outline btn-block">LINEで登録して始める</a>
           </div>
@@ -689,7 +632,7 @@
         <div class="price-card price-card--featured">
           <div class="price-header">
             <div class="price-plan">Level 2 — 人気</div>
-            <div class="price-name">動画 + 現場同行プラン</div>
+            <div class="price-name">動画 + 個別サポートプラン</div>
             <div class="price-amount">
               <span class="price-yen" id="l2-price">¥9,800</span>
               <span class="price-unit">/ 月（税込）</span>
@@ -699,10 +642,9 @@
           <div class="price-body">
             <ul class="price-features">
               <li class="price-feature">L1 の全機能</li>
-              <li class="price-feature">実際の施工現場への同行（月1回〜）</li>
-              <li class="price-feature">現場での直接フィードバック</li>
-              <li class="price-feature">独立後のフォローアップ（3ヶ月）</li>
-              <li class="price-feature no">個別面談・マンツーマン指導</li>
+              <li class="price-feature">個別LINE相談 月2回（石川への直接質問）</li>
+              <li class="price-feature">機種リクエスト 月3回（L1は月1回）</li>
+              <li class="price-feature">新着動画の優先通知・早期アクセス</li>
             </ul>
             <a href="https://lin.ee/goodairmakers" target="_blank" class="btn btn-primary btn-block">LINEで登録して始める</a>
           </div>
@@ -741,31 +683,22 @@
         <div class="testimonial">
           <div class="testimonial-stars">★★★★★</div>
           <div class="testimonial-text">「まったくの素人からスタートしましたが、動画がとにかくわかりやすく、AIにすぐ質問できるので躓かずに進めました。」</div>
-          <div class="testimonial-author"><div class="testimonial-avatar">🌱</div><div><div class="testimonial-name">A.T さん</div><div class="testimonial-meta">元・会社員 / 現在独立済 / 群馬県</div></div></div>
+          <div class="testimonial-author"><div class="testimonial-avatar"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><div class="testimonial-name">A.T さん</div><div class="testimonial-meta">元・会社員 / 現在独立済 / 群馬県</div></div></div>
         </div>
         <div class="testimonial">
           <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-text">「現場同行で実際の施工を見て、一気に自信がつきました。座学だけでは絶対に得られない経験です。」</div>
-          <div class="testimonial-author"><div class="testimonial-avatar">🏠</div><div><div class="testimonial-name">R.N さん</div><div class="testimonial-meta">L2受講中 / 埼玉県</div></div></div>
+          <div class="testimonial-text">「動画とAIへの質問を組み合わせたら、想像以下に早く技術が定着しました。一人でも全然迷わせに進められました。」</div>
+          <div class="testimonial-author"><div class="testimonial-avatar"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><div class="testimonial-name">R.N さん</div><div class="testimonial-meta">L2受講中 / 埼玉県</div></div></div>
         </div>
         <div class="testimonial">
           <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-text">「集客のテンプレートが特によかった。何をどう発信すればいいかわからなかったのが、すぐ動けるようになりました。」</div>
-          <div class="testimonial-author"><div class="testimonial-avatar">📣</div><div><div class="testimonial-name">H.M さん</div><div class="testimonial-meta">副業から独立 / 神奈川県</div></div></div>
+          <div class="testimonial-text">「AIに何度でも質問できる環境があるので、独学の孤独感がまったくなかった。わからないことをすぐ解消できるのが一番大きかったです。」</div>
+          <div class="testimonial-author"><div class="testimonial-avatar"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><div class="testimonial-name">H.M さん</div><div class="testimonial-meta">副業から独立 / 神奈川県</div></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Plan switcher for Beginner track -->
-  <section class="section section--white" style="padding:32px 0;">
-    <div class="container">
-      <div class="plan-switcher">
-        <div class="plan-switcher-text"><strong>すでに清掃業としてネいている方へ</strong><br>現役業者向けの動画DBサブスクがあります。</div>
-        <button class="btn btn-outline" onclick="selectTrack('pro'); document.getElementById('track-pro').scrollIntoView({behavior:'smooth'})">プロ向けプランを見る →</button>
-      </div>
-    </div>
-  </section>
 
 </div><!-- /track-beginner -->
 
@@ -776,12 +709,12 @@
     <p class="label-en" data-aos="fade-up">About the School</p>
     <h2 class="section-title" data-aos="fade-up"><strong>群馬で毎日現場に立ち続ける、<br>エアコン完全分解のプロ集団</strong></h2>
     <div class="instructor-grid" data-aos="fade-up" data-aos-delay="80">
-      <div class="instructor-visual">🔧</div>
+      <div class="instructor-visual"><svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
       <div>
         <div class="instructor-badge">
           <span class="badge">★5.0 Googleクチコミ</span>
           <span class="badge">群馬 No.1</span>
-          <span class="badge">年間施工1,000件超</span>
+          <span class="badge">年間施工600台以上</span>
           <span class="badge">専門歴10年以上</span>
         </div>
         <div class="instructor-name">株式会社ピーエス工販</div>
@@ -821,35 +754,21 @@
       <div id="faq-beginner" class="faq-panel">
         <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">まったくの未経験でも大丈夫ですか？<span class="q-icon">+</span></div><div class="faq-a">はい、L1カリキュラムは完全未経験者向けに設計されています。基礎知識から順を追って学べます。</div></div>
         <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">L1からL2へのプランアップグレードはできますか？<span class="q-icon">+</span></div><div class="faq-a">はい、いつでも変更可能です。アップグレードは翌月から反映されます。</div></div>
-        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">どれくらいで開業できますか？<span class="q-icon">+</span></div><div class="faq-a">個人差があるため断言はできませんが、L2受講者の方は3〜6ヶ月を目安にしている方が多いです。学習ペースと実践量が大きく影響します。</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">どれくらいで開業できますか？<span class="q-icon">+</span></div><div class="faq-a">個人差があるため断言はできませんが33〜6ヶ月を目�安に動き出している方が多いです。学習ペースと実践量が大きく影響します。</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========== GUARANTEE ========== -->
-<section class="section section--tint">
-  <div class="container">
-    <div class="guarantee-box" data-aos="fade-up">
-      <div class="guarantee-icon">🛡️</div>
-      <div class="guarantee-title">入会後7日間 返金保証</div>
-      <div class="guarantee-text">
-        ご入会後7日以内であれば、理由を問わず全額返金いたします。<br>
-        動画の内容・AIボットの品質を実際に体験してからご判断ください。<br><br>
-        <span style="font-size:13px;color:var(--text-mute)">※返金申請はLINEよりお問い合わせください</span>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ========== CONTACT ========== -->
 <section id="contact" class="section section--white">
   <div class="container" style="text-align:center;">
     <p class="label-en" data-aos="fade-up">Get Started</p>
     <h2 class="section-title" data-aos="fade-up"><strong>まずは無料で体験してください</strong></h2>
-    <p class="section-desc" style="max-width:480px;margin:16px auto 40px;" data-aos="fade-up">7日間の返金保証付きで、リスクなくお試しいただけます。迷ったらまず無料相談を。</p>
+    <p class="section-desc" style="max-width:480px;margin:16px auto 40px;" data-aos="fade-up">いつでも解約可能。まずはLINE登録からお気軽にどうぞ。</p>
     <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;" data-aos="fade-up" data-aos-delay="80">
-      <a href="https://lin.ee/goodairmakers" target="_blank" class="btn btn-primary btn-lg">LINEで無料体験（7日返金保証）</a>
+      <a href="https://lin.ee/goodairmakers" target="_blank" class="btn btn-primary btn-lg">LINEで登録して始める</a>
       <a href="https://lin.ee/goodairmakers" target="_blank" class="btn btn-outline btn-lg">LINEで無料相談する</a>
     </div>
   </div>
@@ -898,8 +817,8 @@
     const isPro = type === 'pro';
     document.getElementById('track-pro').classList.toggle('active', isPro);
     document.getElementById('track-beginner').classList.toggle('active', !isPro);
-    document.getElementById('branch-pro').classList.toggle('selected', isPro);
-    document.getElementById('branch-beginner').classList.toggle('selected', !isPro);
+    const bPro = document.getElementById('branch-pro'); if(bPro) bPro.classList.toggle('selected', isPro);
+    const bBeg = document.getElementById('branch-beginner'); if(bBeg) bBeg.classList.toggle('selected', !isPro);
     document.getElementById('hdr-pro').classList.toggle('active', isPro);
     document.getElementById('hdr-beginner').classList.toggle('active', !isPro);
 
